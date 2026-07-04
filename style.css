@@ -1,0 +1,64 @@
+body{
+    background:#d9d9d9;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:center;
+}
+
+#table{
+    margin:auto;
+    border-spacing:0;
+}
+
+.tile1,.tile2,.tile3,.tile4,
+.tile5,.tile6,.tile7,.tile8,
+.tile9,.tile10,.tile11,.tile12,
+.tile13,.tile14,.tile15,.tile16{
+
+    display:table-cell;
+    width:90px;
+    height:90px;
+
+    border:2px solid white;
+
+    font-size:38px;
+    font-weight:bold;
+    text-align:center;
+    vertical-align:middle;
+
+    cursor:pointer;
+
+    background:#d8b4f8;
+}
+
+.tile16{
+    background:white;
+    cursor:default;
+}
+
+button{
+    margin:8px;
+    padding:8px 16px;
+    font-size:16px;
+}
+
+.tile1::before{content:"1";}
+.tile2::before{content:"2";}
+.tile3::before{content:"3";}
+.tile4::before{content:"4";}
+
+.tile5::before{content:"5";}
+.tile6::before{content:"6";}
+.tile7::before{content:"7";}
+.tile8::before{content:"8";}
+
+.tile9::before{content:"9";}
+.tile10::before{content:"10";}
+.tile11::before{content:"11";}
+.tile12::before{content:"12";}
+
+.tile13::before{content:"13";}
+.tile14::before{content:"14";}
+.tile15::before{content:"15";}
+.tile16::before{
+    content:"";
+}
