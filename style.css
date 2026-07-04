@@ -1,64 +1,47 @@
 body{
-    background:#d9d9d9;
-    font-family:Arial, Helvetica, sans-serif;
-    text-align:center;
+    font-family:Arial,Helvetica,sans-serif;
+    background:#222;
+    color:white;
 }
 
 #table{
-    margin:auto;
-    border-spacing:0;
+    border-collapse:collapse;
 }
 
-.tile1,.tile2,.tile3,.tile4,
-.tile5,.tile6,.tile7,.tile8,
-.tile9,.tile10,.tile11,.tile12,
-.tile13,.tile14,.tile15,.tile16{
+#table div{
+    display:table-row;
+}
 
+#table div div{
     display:table-cell;
-    width:90px;
-    height:90px;
-
-    border:2px solid white;
-
-    font-size:38px;
-    font-weight:bold;
-    text-align:center;
-    vertical-align:middle;
-
+    width:100px;
+    height:100px;
+    border:1px solid #444;
     cursor:pointer;
-
-    background:#d8b4f8;
+    background-image:url("koji.jpg");
+    background-size:400px 400px;
 }
+
+.tile1  {background-position:   0px    0px;}
+.tile2  {background-position:-100px    0px;}
+.tile3  {background-position:-200px    0px;}
+.tile4  {background-position:-300px    0px;}
+
+.tile5  {background-position:   0px -100px;}
+.tile6  {background-position:-100px -100px;}
+.tile7  {background-position:-200px -100px;}
+.tile8  {background-position:-300px -100px;}
+
+.tile9  {background-position:   0px -200px;}
+.tile10 {background-position:-100px -200px;}
+.tile11 {background-position:-200px -200px;}
+.tile12 {background-position:-300px -200px;}
+
+.tile13 {background-position:   0px -300px;}
+.tile14 {background-position:-100px -300px;}
+.tile15 {background-position:-200px -300px;}
 
 .tile16{
     background:white;
-    cursor:default;
-}
-
-button{
-    margin:8px;
-    padding:8px 16px;
-    font-size:16px;
-}
-
-.tile1::before{content:"1";}
-.tile2::before{content:"2";}
-.tile3::before{content:"3";}
-.tile4::before{content:"4";}
-
-.tile5::before{content:"5";}
-.tile6::before{content:"6";}
-.tile7::before{content:"7";}
-.tile8::before{content:"8";}
-
-.tile9::before{content:"9";}
-.tile10::before{content:"10";}
-.tile11::before{content:"11";}
-.tile12::before{content:"12";}
-
-.tile13::before{content:"13";}
-.tile14::before{content:"14";}
-.tile15::before{content:"15";}
-.tile16::before{
-    content:"";
+    background-image:none !important;
 }
